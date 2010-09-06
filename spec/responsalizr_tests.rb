@@ -1,3 +1,5 @@
+#Copyright (c) 2010, Nathaniel Ritmeyer. All rights reserved.
+
 #while writing responsalizr, I had a bare bones rails app that
 #I used to have the tests run against. This being a very small
 #project, I didn't want to spend ages mocking out a web server
