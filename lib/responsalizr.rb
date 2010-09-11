@@ -14,7 +14,7 @@ module Responsalizr
 
   Net::HTTPResponse.send :define_method, :code? do |expected_code|
     unless Net::HTTPResponse.const_get("CODE_TO_OBJ").keys.collect{|key| key.to_i}.include?(expected_code)
-      raise ArgumentError.new "#{expected_code} not a valid response code"
+      raise ArgumentError.new("#{expected_code} not a valid response code")
     end
     self.code.to_i == expected_code
   end
