@@ -10,12 +10,12 @@ spec = Gem::Specification.new do |s|
   s.name = 'responsalizr'
   s.version = '1.0.2'
   s.has_rdoc = false
-  s.extra_rdoc_files = ['README', 'LICENSE']
+  s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
   s.summary = 'Test HTTP responses in ruby'
   s.description = s.summary
   s.author = 'Nat Ritmeyer'
   s.email = 'nat@natontesting.com'
-  s.files = %w(LICENSE README Rakefile) + Dir.glob("{bin,lib,spec}/**/*")
+  s.files = %w(LICENSE README.rdoc Rakefile) + Dir.glob("{bin,lib,spec}/**/*")
   s.require_path = "lib"
   s.bindir = "bin"
 end
