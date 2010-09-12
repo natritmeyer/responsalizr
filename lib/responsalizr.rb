@@ -1,11 +1,15 @@
 #Copyright (c) 2010, Nathaniel Ritmeyer. All rights reserved.
 
-require 'rubygems'
 require 'net/http'
 require 'active_support/core_ext/string/inflections'
 
+#Extends Net::HTTPResponse to include methods that allow for idiomatic
+#testing of response codes and response names. Don't expect much from
+#the rdoc, it's all quite meta...
 module Responsalizr
   class Response
+    #Takes a URL as a string along with optional proxy details. Returns
+    #a Net::HTTPResponse of some kind.
     def self.from(url_string = nil, proxy = {:proxy_host => nil, :port => nil})
       raise ArgumentError if url_string.nil?
       Net::HTTP.Proxy(proxy[:proxy_host], proxy[:port]).get_response(URI.parse(url_string))
