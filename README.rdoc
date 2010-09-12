@@ -1,5 +1,7 @@
-Responsalizr
-- Test HTTP Response Codes in Ruby
+=Responsalizr
+Test HTTP Response Codes in Ruby
+
+Written by Nat Ritmeyer (http://www.natontesting.com)
 
 I'll update this readme soon. For now, take a look at:
 
