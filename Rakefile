@@ -26,14 +26,14 @@ Rake::GemPackageTask.new(spec) do |p|
   p.need_zip = true
 end
 
-#Rake::RDocTask.new do |rdoc|
-#  files =['README', 'LICENSE', 'lib/**/*.rb']
-#  rdoc.rdoc_files.add(files)
-#  rdoc.main = "README" # page to start on
-#  rdoc.title = "responsalizr Docs"
-#  rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
-#  rdoc.options << '--line-numbers'
-#end
+Rake::RDocTask.new do |rdoc|
+  files =['README.rdoc', 'LICENSE', 'lib/**/*.rb']
+  rdoc.rdoc_files.add(files)
+  rdoc.main = "README.rdoc" # page to start on
+  rdoc.title = "responsalizr Docs"
+  rdoc.rdoc_dir = 'doc/rdoc' # rdoc output folder
+  rdoc.options << '--line-numbers'
+end
 
 Rake::TestTask.new do |t|
   t.test_files = FileList['test/**/*.rb']
