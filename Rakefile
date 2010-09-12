@@ -8,7 +8,7 @@ require 'spec/rake/spectask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'responsalizr'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.has_rdoc = false
   s.extra_rdoc_files = ['README', 'LICENSE']
   s.summary = 'Test HTTP responses in ruby'
